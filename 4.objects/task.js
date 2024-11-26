@@ -14,7 +14,7 @@ if (!this.marks) {
     console.error('Студент отчислен. Добавление оценок невозможно.');
     return;
   }
-this.marks.push(...marksToAdd);  
+this.marks.push(...marks);  
 }
 
 Student.prototype.getAverage = function () {
