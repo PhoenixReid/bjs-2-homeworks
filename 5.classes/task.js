@@ -23,20 +23,20 @@ class PrintEditionItem{
     return this.state
   }
 
-   set State(state){
+  set state(state){
     if (state<0){
-      this.state = 0
+      this._state = 0
       return this._state
     }
     if(state > 100){
-      this.state = 100
+      this._state = 100
       return this._state
     }
-    this.state = state
+    this._state = state
     return this._state
   }
 
-  get State(){
+  get state(){
     return this._state
   }
 }
