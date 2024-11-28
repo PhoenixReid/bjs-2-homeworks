@@ -23,21 +23,21 @@ class PrintEditionItem{
     return this.state
   }
 
-   set spyOnProperty(state){
+   set State(state){
     if (state<0){
       this.state = 0
-      return this.state
+      return this._state
     }
     if(state > 100){
       this.state = 100
-      return this.state
+      return this._state
     }
     this.state = state
-    return this.state
+    return this._state
   }
 
-  getState(){
-    return this.state
+  get State(){
+    return this._state
   }
 }
 
