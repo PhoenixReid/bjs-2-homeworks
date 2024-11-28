@@ -61,6 +61,7 @@ class Library{
 giveBookByName(bookName){
   const delBook = this.findBookBy("name", bookName)
   this.books = this.books.filter(book => book !== delBook)
+  return delBook
 }
 }
 
