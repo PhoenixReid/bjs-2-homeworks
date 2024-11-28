@@ -23,7 +23,7 @@ class PrintEditionItem{
     return this.state
   }
 
-  setState(state){
+   set spyOnProperty(state){
     if (state<0){
       this.state = 0
       return this.state
